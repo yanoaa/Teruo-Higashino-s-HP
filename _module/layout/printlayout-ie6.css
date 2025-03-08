@@ -1,0 +1,21 @@
+/* printlayout-ie60.css (for IE6)　
+--------------------------------------------------------- */
+#area-print #bind-print-note	{ width:640px;}
+#area-print #page-title	{ width:620px;}
+
+#area-print .atl,#area-print .atr,#area-print .atc,#area-print .aml,#area-print .amr,#area-print .abl,#area-print .abr,#area-print .abc	{ display:none;}
+#area-print .btl,#area-print .btr,#area-print .btc,#area-print .bml,#area-print .bmr,#area-print .bbl,#area-print .bbr,#area-print .bbc	{ display:none;}
+#area-print .xtl,#area-print .xtr,#area-print .xtc,#area-print .xml,#area-print .xmr,#area-print .xbl,#area-print .xbr,#area-print .xbc	{ display:none;}
+#area-print .tl,#area-print .tr,#area-print .tc,#area-print .ml,#area-print .mr,#area-print .bl,#area-print .br,#area-print .bc	{ display:none;}
+
+#area-print table.table	{ table-layout:auto;}
+#area-print table.table .ctl,#area-print table.table .ctr,#area-print table.table .ctc,
+#area-print table.table .cml,#area-print table.table .cmr,
+#area-print table.table .cbl,#area-print table.table .cbr,#area-print table.table .cbc	{ display:none;}
+
+* html .aml,* html .amr	{ display:none;}
+* html .bml,* html .bmr	{ display:none;}
+* html .xml,* html .xmr	{ display:none;}
+* html .ml,* html .mr	{ display:none;}
+
+#area-print .wind-bg	{ padding-top:0;  background:none;}

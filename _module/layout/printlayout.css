@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* printlayout.css　
+--------------------------------------------------------- */
+@media print	{
+	#bind-print-note	{ display:none;}
+	#area-print	{ margin:0 auto; padding:0;}
+}
+
+#bind-print-note	{
+	margin-bottom:20px;
+	background:#EEE;
+	font-size:80%;
+	text-align:center;
+}
+#bind-print-note form	{
+	margin:0 auto;
+	padding:10px 20px;
+	text-align:left;
+}
+#bind-print-note input	{ padding:0 5px; font-size:12px; letter-spacing:1px;}
+#bind-print-note p	{ text-align:right;}
+#no-script	{ margin:0 0 10px 0; text-align:center;}
+
+#area-print #area-header,
+#area-print #area-billboard,
+#area-print #area-contents,
+#area-print #area-main,
+#area-print #area-side-a,
+#area-print #area-side-b,
+#area-print #area-footer	{ position:static; float:none;}
+#area-print #blank-footer	{ display:none;}
+
+#area-print	{ margin:0 auto; font-size:90%;}
+#area-print #page-title	{ display:block; padding:5px 10px; text-align:right;}
+#area-print #page-title span	{ font-weight:normal;}
+
+#area-print .table	{ width:100%;}
+#area-print td	{ vertical-align:top;}
+*:first-child+html .album .mm,
+*:first-child+html .album .mc,
+*:first-child+html .album .bindzoom	{ position:static;}
+
+#area-print .menuh .li1	{ margin-right:10px;}
+#area-print h2,#area-print h3,#area-print h4,#area-print p,#area-print blockquote,#area-print address	{ padding-bottom:5px;}
+
+#area-print .wind-bg	{ padding-top:0;  background:none;}
+
+#area-print .frill img	{ padding:0; border:0;}

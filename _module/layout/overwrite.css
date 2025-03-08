@@ -1,0 +1,14 @@
+/* basic setting */
+.picbk p	{ padding-bottom:0;}
+/* :tab, :accordion */
+.tab .h2 .mm,.tab .h2 .mc,.accordion .h2 .mm,.accordion .h2 .mc	{ background:none repeat;}
+.tab .twrap .h2,.tab .twrap h2,.accordion .h2,.accordion h2	{ font-size:95% !important;}
+* html .accordion .simple h2 a	{ border-bottom-width:0; background:none;}
+* html .accordion .standard .h2 .mc a	{ border-bottom-width:0;}
+/* :areaskin */
+#area-footer	{ padding-bottom:0;}
+.area .noskin .wrap	{ padding:0;}
+/* :list 5th */
+.menuv .li4 .li4	{ padding-left:0 !important;}
+/* :table parts */
+div.ac th,div.ac td,div.ar th,div.ar td	{ text-align:left;}
