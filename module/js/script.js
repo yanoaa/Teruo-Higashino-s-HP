@@ -120,7 +120,7 @@ if (pagecss.indexOf('/wp-content/themes/BiND6Theme/') > -1) {
 }
 
 bindobj.dir = '';
-var moduleDir = '_module';
+var moduleDir = 'module';
 if (bindobj.rs == 0) {
 	bindobj.dir = bindobj.siteroot;
 } else {
@@ -135,7 +135,7 @@ var wp_folder = 'wp-content/themes/BiND%20for%20WordPress/';
 if ((page_css.href).indexOf(wp_folder) != -1) {
 	bindobj.siteroot = document.baseURI + wp_folder;
 	bindobj.dir = bindobj.siteroot;
-	moduleDir = '_module';
+	moduleDir = 'module';
 }
 
 bindobj.moduleroot = bindobj.dir + moduleDir;
@@ -164,30 +164,30 @@ if (bindobj.ie52 || bindobj.ie55 || bindobj.ns7 || bindobj.ff1 || bindobj.op8) {
 } else {
 	var optcss = bindobj.moduleroot + '/layout/';
 //*** 090626 modified
-	if (bindobj.cornerskin) optcss = bindobj.siteroot + '_cnskin/' + bindobj.cornerskin + '/css/';
+	if (bindobj.cornerskin) optcss = bindobj.siteroot + 'cnskin/' + bindobj.cornerskin + '/css/';
 
 	if (bindobj.ie70) {
-		if (bindobj.win7 || bindobj.vista) optcss += '_ie7v.css';
-		else optcss += '_ie7x.css';
+		if (bindobj.win7 || bindobj.vista) optcss += 'ie7v.css';
+		else optcss += 'ie7x.css';
 	}
 	else if (bindobj.ie80) {
-		if (bindobj.win7 || bindobj.vista) optcss += '_ie8v.css';
-		else optcss += '_ie8x.css';
+		if (bindobj.win7 || bindobj.vista) optcss += 'ie8v.css';
+		else optcss += 'ie8x.css';
 	}
 //*** 090825 modified
 	else if (bindobj.ie60) {
-		optcss += '_ie6.css';
+		optcss += 'ie6.css';
 		if (bindobj.cornerskin) document.write('<link rel="stylesheet" type="text/css" href="' + bindobj.moduleroot + '/layout/cnskin-ie6.css" />');
 	}
-	else if (bindobj.msf) optcss += '_msf.css';
-	else if (bindobj.mff) optcss += '_mff.css';
+	else if (bindobj.msf) optcss += 'msf.css';
+	else if (bindobj.mff) optcss += 'mff.css';
 	else if (bindobj.wff || bindobj.ie80) {
-		if (bindobj.win7 || bindobj.vista) optcss += '_wffv.css';
-		else optcss += '_wffx.css';
+		if (bindobj.win7 || bindobj.vista) optcss += 'wffv.css';
+		else optcss += 'wffx.css';
 	}
-	else if (bindobj.chr) optcss += '_chr.css';
-	else if (bindobj.mac) optcss += '_mac.css';
-	else optcss += '_else.css';
+	else if (bindobj.chr) optcss += 'chr.css';
+	else if (bindobj.mac) optcss += 'mac.css';
+	else optcss += 'else.css';
 	if (optionscss) document.getElementById('options-css').href = optcss;
 	else addCSS(optcss);
 
@@ -216,22 +216,22 @@ if (bindobj.ie52 || bindobj.ie55 || bindobj.ns7 || bindobj.ff1 || bindobj.op8) {
 
 		///// filename
 		if (bindobj.ie70) {
-			if (bindobj.win7 || bindobj.vista) fcss += '_ie7v.css';
-			else fcss += '_ie7x.css';
+			if (bindobj.win7 || bindobj.vista) fcss += 'ie7v.css';
+			else fcss += 'ie7x.css';
 		}
 //*** 090825 modified
 		else if (bindobj.ie60) {
-			optcss += '_ie6.css';
+			optcss += 'ie6.css';
 			if (bindobj.cornerskin) document.write('<link rel="stylesheet" type="text/css" href="' + bindobj.moduleroot + '/layout/cnskin-ie6.css" />');
 		}
-		else if (bindobj.msf) fcss += '_msf.css';
-		else if (bindobj.mff) fcss += '_mff.css';
+		else if (bindobj.msf) fcss += 'msf.css';
+		else if (bindobj.mff) fcss += 'mff.css';
 		else if (bindobj.wff) {
-			if (bindobj.win7 || bindobj.vista) fcss += '_wffv.css';
-			else fcss += '_wffx.css';
+			if (bindobj.win7 || bindobj.vista) fcss += 'wffv.css';
+			else fcss += 'wffx.css';
 		}
-		else if (bindobj.mac) fcss += '_mac.css';
-		else fcss += '_else.css';
+		else if (bindobj.mac) fcss += 'mac.css';
+		else fcss += 'else.css';
 
 		addCSS(fcss);
 	}
@@ -318,7 +318,7 @@ if (!bindobj.ie52) {
 	}
 
 	// corner js
-	if (bindobj.cornerskin) addJS(bindobj.siteroot + '_cnskin/' + bindobj.cornerskin + '/js/override.js', 'override-js');
+	if (bindobj.cornerskin) addJS(bindobj.siteroot + 'cnskin/' + bindobj.cornerskin + '/js/override.js', 'override-js');
 
 	// load js
 	addJS(bindobj.moduleroot + '/js/load.js', 'load-js');

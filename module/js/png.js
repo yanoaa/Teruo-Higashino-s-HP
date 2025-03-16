@@ -11,7 +11,7 @@
 
 clearpng = {
 	alphaimageloader: 'DXImageTransform.Microsoft.AlphaImageLoader',
-	spacer: bindobj.dir + '_module/js/parts/spacer.gif',
+	spacer: bindobj.dir + 'module/js/parts/spacer.gif',
 	
 	fix: function() {
 		if (!bindobj.ie60) return;

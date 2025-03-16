@@ -89,7 +89,7 @@
 			var link = document.createElement('link');
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = parent.ctxpath + '_modules/css/blockEditor.css';
+			link.href = parent.ctxpath + 'modules/css/blockEditor.css';
 			tag.parentNode.appendChild(link);
 		}
 	}
