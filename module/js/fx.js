@@ -2091,16 +2091,16 @@ function loadSync(sw) {
 	if (sw && !bd.swfAdrLoaded) {
 		bd.swfAdrLoaded = true;
 		head.load([
-			SYNC_SVR + "_modules/js/swfaddress.js",
+			SYNC_SVR + "modules/js/swfaddress.js",
 		]);
 	}
 	
 	if (!bd.syncLoaded) {
 		bd.syncLoaded = true;
 		head.load([
-			SYNC_SVR + "_modules/css/sync.css",
-			SYNC_SVR + "_modules/js/json.js",
-			SYNC_SVR + "_modules/js/sync.js"
+			SYNC_SVR + "modules/css/sync.css",
+			SYNC_SVR + "modules/js/json.js",
+			SYNC_SVR + "modules/js/sync.js"
 		]);
 	}
 }
